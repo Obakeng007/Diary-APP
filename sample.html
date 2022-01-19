@@ -1,0 +1,58 @@
+
+<HTML>
+    <head>
+        <title>D</title>
+        <link rel="stylesheet" href="looks.css">
+    </head>
+    <body>                                                                                                     
+       <div class="kat">
+           <div class="box">
+               <div class="button1">
+                   <div id="btn"></div>
+                   <button  type="button" class="toggle-btn" onclick="login()"  >Log In </button>
+                   <button type="button" class="toggle-btn" onclick="register()" >Register</button>
+               </div>
+               <div class="icons">
+                   <img src="FB.jpg">
+                   <img src="WT.png">
+                   <img src="IN.JPG">
+               </div>
+               <form  id="login" class="logs">
+                   <input type="email" class="input-field" placeholder="user email" >
+                   <input type="password" class="input-field" placeholder="enter password">
+                   <input type="checkbox" class="chekbox"><span>Remember Password</span>
+                   <button  type="submit" class="submit-btn"><a href="index.html">Login</button> </a>
+                
+               </form>
+               
+                <form id="register" class="logs">
+                   <input type="text" class="input-field" placeholder="Name" required>
+                     <input type="email" class="input-field" placeholder="enter email" required>
+                   <input type="password" class="input-field" placeholder="enter password" required>
+                   <input type="checkbox" class="chekbox"><span>Agree to term and conditions</span>
+                   <button type="submit" class="submit-btn">Register</button>
+                
+               </form>
+               </div>
+        
+        </div>
+        
+        <script>
+            var k = document.getElementById("login");
+            var l = document.getElementById("register");
+            var m = document.getElementById("btn");
+            
+            function register(){
+                k.style.left ="-400px";
+                l.style.left ="50px";
+                m.style.left ="110px";
+            }
+            
+            function login(){
+                k.style.left ="50px";
+                l.style.left ="450px";
+                m.style.left ="0px";
+            }
+        </script>
+    </body>
+</HTML>
